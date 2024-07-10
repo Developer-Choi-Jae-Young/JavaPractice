@@ -45,10 +45,6 @@ public class TCPServer {
 			try {
 				if(sc != null)
 					sc.close(); // Scanner 닫기
-				if(out != null)
-					out.close();
-				if(in != null)
-					in.close();
 				if(socket != null)
 					socket.close(); // Socket 닫기
 				if(serverSocket != null)

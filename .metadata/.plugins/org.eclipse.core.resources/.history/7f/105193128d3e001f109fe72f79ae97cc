@@ -38,12 +38,12 @@ public class TCPClient {
 			e.printStackTrace();
 		} finally {
 			try {
-				if (sc != null)
-					sc.close();
 				if(out != null)
 					out.close();
 				if(in != null)
 					in.close();
+				if (sc != null)
+					sc.close();
 				if (socket != null)
 					socket.close();
 				System.out.println("정상 종료");
