@@ -1,0 +1,27 @@
+package com.kh.practice;
+
+interface Inter1<T> {
+	void method1(T data);
+}
+
+interface Inter2<F> {
+	void method2(F data);
+}
+
+class DataClass04<E> implements Inter1<E>, Inter2<E> {
+	public void method1(E data) {
+		System.out.println(data);
+	}
+
+	public void method2(E data) {
+		System.out.println(data);
+	}
+}
+
+public class GenericImplRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}

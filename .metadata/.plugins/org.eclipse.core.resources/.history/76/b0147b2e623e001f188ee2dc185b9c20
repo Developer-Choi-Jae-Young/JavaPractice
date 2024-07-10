@@ -1,0 +1,8 @@
+package com.kh.practice;
+
+public class ThreadRun {
+
+	public static void main(String[] args) {
+		
+	}
+}

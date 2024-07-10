@@ -1,0 +1,34 @@
+package com.kh.practice.map;
+
+import java.util.HashMap;
+import java.util.Properties;
+
+public class MapPractice {
+
+	public static void main(String[] args) {
+		propertiesTest();
+//		/hashMapTest();
+	}
+	
+	public static void propertiesTest() {
+		Properties prop = new Properties();
+		
+		prop.put("List", "ArrayList");
+		prop.put("Set", "HashSet");
+		prop.put("Map", "HashMap");
+		prop.put("Map", "Properties");
+		
+		System.out.println(prop);
+	}
+	
+	public static void hashMapTest() {
+		HashMap<String, String> hMap = new HashMap<>();
+		
+		hMap.put("List", "ArrayList");
+		hMap.put("Set", "HashSet");
+		hMap.put("Map", "HashMap");
+		hMap.put("Map", "Properties");
+		
+		System.out.println(hMap);
+	}
+}

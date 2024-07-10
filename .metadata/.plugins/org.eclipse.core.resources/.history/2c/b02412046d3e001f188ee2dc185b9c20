@@ -1,0 +1,39 @@
+package com.kh.practice;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class RunServer {
+	ServerSocket serverSocket = new ServerSocket(8000);
+	Socket socket = serverSocket.accept();
+	
+	InputStream in = socket.getInputStream();
+	OutputStream out = socket.getOutputStream();
+	
+	byte[] inputData = new byte[100];
+	int length = in.read(inputData);
+	String inputMessage = new String(inputData, 0, length);
+	
+	String outputMessage = "보낼 메시지";
+
+	/*
+	ServerSocket serverSocket = new ServerSocket(8000); 
+	Socket socket = serverSocket.accept();
+	
+	InputStream in = socket.getInputStream( );
+	OutputStream out = socket.getOutputStream( );
+	
+	byte[ ] inputData = new byte[100];
+	int length = in.read(inputData);
+	String inputMessage = new String(inputData, 0, length);
+	 
+	String outputMessage = "보낼메시지";
+	out.write(outputMessage.getBytes( ));
+	out.flush( );
+	 
+	socket.close( );
+	serverSocket.close( );
+	*/
+}

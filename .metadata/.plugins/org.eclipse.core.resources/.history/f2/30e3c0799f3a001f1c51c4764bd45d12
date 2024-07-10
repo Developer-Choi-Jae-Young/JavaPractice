@@ -1,0 +1,37 @@
+package com.kh.practice.list.library.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.kh.practice.list.library.model.vo.Book;
+
+public class BookController {
+	private List<Book> list = new ArrayList<>();
+
+	public BookController() {
+	}
+	
+	public void insertBook(Book bk) {
+		list.add(bk);
+	}
+	
+	public ArrayList<String> searchBook(String keyword) {
+		List<String>
+		for(String s : list) {
+			if(s.contains(keyword)) {
+				
+			}
+		}
+		list.contains(keyword);
+		return null;
+	}
+	
+	public Book deleteBook(String title, String author) {
+		return null;
+	}
+	
+	public int ascBook() {
+		return 0;
+	}
+	
+}

@@ -1,0 +1,33 @@
+package com.kh.practice.map;
+
+import java.util.Properties;
+
+public class MapPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		propertiesTest();
+	}
+	
+	public static void propertiesTest() {
+		Properties prop = new Properties();
+		
+		prop.put("List", "ArrayList");
+		prop.put("Set", "HashSet");
+		prop.put("Map", "HashMap");
+		prop.put("Map", "Properties");
+		
+		System.out.println(prop);
+	}
+	
+	public static void hashMapTest() {
+		Properties prop = new Properties();
+		
+		prop.put("List", "ArrayList");
+		prop.put("Set", "HashSet");
+		prop.put("Map", "HashMap");
+		prop.put("Map", "Properties");
+		
+		System.out.println(prop);
+	}
+}

@@ -1,0 +1,10 @@
+package com.kh.practice.set.model.compare;
+
+public class SortedLottery implements Comparable<SortedLottery>{
+
+	@Override
+	public int compareTo(SortedLottery o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

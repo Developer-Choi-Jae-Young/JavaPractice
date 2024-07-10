@@ -1,0 +1,12 @@
+package com.kh.practice;
+
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+
+public class InetRun {
+
+	public static void main(String[] args) {
+		InetAddress ia = new InetSocketAddress(, 0);
+	}
+
+}

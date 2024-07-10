@@ -1,0 +1,20 @@
+package com.kh.practice;
+
+class Parent<T> {
+	T data;
+}
+
+class Child1 extends Parent {     		// class Child1 extends Parent -----> class Child1 extends Parent<Object>
+	//Object data
+}
+
+class Child2 extends Parent<String> {	// class Child1 extends Parent -----> class Child1 extends Parent<String>
+	//String data
+}
+
+public class GenericInheritRun {
+
+	public static void main(String[] args) {
+	}
+
+}

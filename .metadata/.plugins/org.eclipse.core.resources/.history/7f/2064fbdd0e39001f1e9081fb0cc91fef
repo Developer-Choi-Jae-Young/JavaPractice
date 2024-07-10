@@ -1,0 +1,92 @@
+package com.kh.phone.view;
+
+import java.util.Scanner;
+
+import com.kh.phone.control.PhoneBookControl;
+import com.kh.phone.model.vo.PhoneBook;
+
+public class phoneMenu {
+	private Scanner sc = new Scanner(System.in);
+	private PhoneBookControl pbc = new PhoneBookControl();
+	private static final String FILE_NAME = "PhoneBook.txt"; 
+	private PhoneBook[] phoneBookList;
+	
+	public phoneMenu() {
+		pbc.makeFile(FILE_NAME);
+		phoneBookList = pbc.readFile(FILE_NAME);
+	}
+	
+	public void mainMenu() {
+		while(true) {
+			System.out.println("1. 전화번호 추가");
+			System.out.println("2. 전화번호 보기");
+			System.out.println("3. 전화번호 삭제");
+			System.out.println("4. 전화번호 수정");
+			System.out.println("9. 프로그램 종료");
+			
+			System.out.print("메뉴 입력 : ");
+			int num = sc.nextInt();
+			sc.nextLine();
+			
+			switch (num) {
+			case 1:
+				insertPhoneInfo();
+				break;
+			case 2:
+				showPhoneInfo();
+				break;
+			case 3:
+				deletePhoneInfo();
+				break;
+			case 4:
+				updatePhoneInfo();
+				break;
+			case 9:
+				System.out.println("프로그램을 종료합니다.");
+				return;
+			default:
+				System.out.println("잘못 입력하였습니다. 다시 한번 확인해주세요.");
+				break;
+			}
+		}
+	}
+	
+	public void insertPhoneInfo() {
+		System.out.print("이름 : ");
+		String name = sc.nextLine();
+		System.out.print("전화번호 : ");
+		String phone = sc.nextLine();
+		System.out.print("소속 : ");
+		String belong = sc.nextLine();
+		System.out.print("이메일 : ");
+		String email = sc.nextLine();
+		System.out.print("메모 : ");
+		String memo = sc.nextLine();
+		
+		pbc.wrtieFile(FILE_NAME, new PhoneBook(name, phone, belong, email, memo));
+		
+		System.out.println("전화번호를 추가하였습니다.");
+	}
+	
+	public void showPhoneInfo() {
+		int count = 0;
+		for(PhoneBook pb : phoneBookList) {
+			if(pbc.getCurrentPhoneListCount() > count) {
+				System.out.println("[" + count + "]" + pb.toString());
+				count++;
+			}
+		}
+	}
+	
+	public void deletePhoneInfo() {
+		showPhoneInfo();
+		System.out.print("삭제할 번호를 입력하시오 : ");
+		int num = sc.nextInt();
+		
+		pbc.deletePhone(num);
+	}
+	
+	public void updatePhoneInfo() {
+		
+	}
+}

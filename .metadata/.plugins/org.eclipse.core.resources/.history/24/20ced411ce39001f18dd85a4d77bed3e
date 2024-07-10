@@ -1,0 +1,20 @@
+package com.kh.practice;
+
+interface Inter1<T> {
+	void method1(T data);
+	
+}
+
+interface Inter2<T> {
+	void method2(T data);
+	
+}
+
+public class GenericImplRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

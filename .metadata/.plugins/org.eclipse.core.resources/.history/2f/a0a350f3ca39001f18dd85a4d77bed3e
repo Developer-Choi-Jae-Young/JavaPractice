@@ -1,0 +1,8 @@
+package com.kh.practice;
+
+public class GenericInheritRun {
+
+	public static void main(String[] args) {
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.kh.practice;
+
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class RunServer {
+	ServerSocket serverSocket = new ServerSocket(8000); 
+	Socket socket = serverSocket.accept();
+	
+	InputStream in = socket.getInputStream( );
+	    OutputStream out = socket.getOutputStream( )
+	출처: https://kadosholy.tistory.com/125 [KADOSHoly:티스토리]
+}

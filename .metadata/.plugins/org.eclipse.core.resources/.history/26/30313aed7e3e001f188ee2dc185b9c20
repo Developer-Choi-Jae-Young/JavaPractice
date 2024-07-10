@@ -1,0 +1,15 @@
+package com.kh.practice;
+
+import java.io.IOException;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class UDPServer {
+	public static void main(String[] args) {
+		try {
+			DatagramSocket ds = new DatagramSocket(8090);
+		} catch (SocketException e) {
+			e.printStackTrace();
+		}
+	}
+}

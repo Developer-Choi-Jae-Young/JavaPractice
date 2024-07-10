@@ -1,0 +1,16 @@
+package com.kh.practice.set.model.vo;
+
+public class Lottery {
+	private String name;
+	private String phone;
+	
+	public Lottery() {
+	}
+	
+	public Lottery(String name, String phone) {
+		this.name = name;
+		this.phone = phone;
+	}
+	
+	
+}

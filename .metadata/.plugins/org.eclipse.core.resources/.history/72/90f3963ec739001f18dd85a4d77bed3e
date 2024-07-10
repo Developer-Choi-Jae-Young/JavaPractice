@@ -1,0 +1,26 @@
+package com.kh.practice;
+
+public class GenericExtednsRun {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	class Generic<T extends Number> {
+		public <T extends Number> T print(T input) {
+			T ob;
+			ob = input;
+			return ob;
+		}
+	}
+	
+	class Number {
+		
+	}
+	
+	class Child extends Number {
+		
+	}
+
+}

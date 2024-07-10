@@ -1,0 +1,33 @@
+package com.kh.practice;
+
+class Parent<T> {
+	T data;
+}
+
+class Child1 extends Parent {     		// class Child1 extends Parent -----> class Child1 extends Parent<Object>
+	//Object data
+}
+
+class Child2 extends Parent<String> {	// class Child2 extends Parent<String> -----> class Child2 extends Parent<String>
+	//String data
+}
+
+class Child3<K> extends Parent<K> {		// class Child3<K> extends Parent -----> class Child3<K> extends Parent<K>
+	//K data
+}
+
+class Child4<M, N> extends Parent<M> {	// class Child4<M, N> extends Parent<M> -----> class Child4<M, N> extends Parent<M>
+	N data2;
+	//M data;
+}
+
+public class GenericInheritRun {
+
+	public static void main(String[] args) {
+		Child3<String> c3 = new Child3<>();
+		c3.data = "æ»≥Á«œººø‰";
+		
+		System.out.println(c3.data);
+	}
+
+}

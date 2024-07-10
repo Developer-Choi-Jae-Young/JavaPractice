@@ -1,0 +1,9 @@
+package com.kh.phone.rum;
+
+public class Run {
+
+	public static void main(String[] args) {
+		new Phone
+	}
+
+}

@@ -1,0 +1,93 @@
+package com.kh.practice.list.library.controller;
+
+import java.util.Comparator;
+import java.util.function.Function;
+import java.util.function.ToDoubleFunction;
+import java.util.function.ToIntFunction;
+import java.util.function.ToLongFunction;
+
+import com.kh.practice.list.library.model.vo.Book;
+
+public class CompareImpl implements Comparator<Book> {
+
+	@Override
+	public int compare(Book o1, Book o2) {
+		//return o1.getTitle().compareTo(o2.getTitle());
+		return o1.getCategory().compareTo(o2.getCategory());
+	}
+
+	@Override
+	public Comparator<Book> reversed() {
+		// TODO Auto-generated method stub
+		return Comparator.super.reversed();
+	}
+
+	@Override
+	public Comparator<Book> thenComparing(Comparator<? super Book> other) {
+		// TODO Auto-generated method stub
+		return Comparator.super.thenComparing(other);
+	}
+
+	@Override
+	public <U> Comparator<Book> thenComparing(Function<? super Book, ? extends U> keyExtractor,
+			Comparator<? super U> keyComparator) {
+		// TODO Auto-generated method stub
+		return Comparator.super.thenComparing(keyExtractor, keyComparator);
+	}
+
+	@Override
+	public <U extends Comparable<? super U>> Comparator<Book> thenComparing(
+			Function<? super Book, ? extends U> keyExtractor) {
+		// TODO Auto-generated method stub
+		return Comparator.super.thenComparing(keyExtractor);
+	}
+
+	@Override
+	public Comparator<Book> thenComparingInt(ToIntFunction<? super Book> keyExtractor) {
+		// TODO Auto-generated method stub
+		return Comparator.super.thenComparingInt(keyExtractor);
+	}
+
+	@Override
+	public Comparator<Book> thenComparingLong(ToLongFunction<? super Book> keyExtractor) {
+		// TODO Auto-generated method stub
+		return Comparator.super.thenComparingLong(keyExtractor);
+	}
+
+	@Override
+	public Comparator<Book> thenComparingDouble(ToDoubleFunction<? super Book> keyExtractor) {
+		// TODO Auto-generated method stub
+		return Comparator.super.thenComparingDouble(keyExtractor);
+	}
+
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+		// TODO Auto-generated method stub
+		super.finalize();
+	}
+	
+}

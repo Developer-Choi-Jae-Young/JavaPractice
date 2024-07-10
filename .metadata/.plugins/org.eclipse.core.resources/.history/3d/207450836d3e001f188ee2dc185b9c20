@@ -1,0 +1,8 @@
+package com.kh.practice;
+
+public class RunClient {
+
+	public static void main(String[] args) {
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.kh.practice;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class InetRun {
+
+	public static void main(String[] args) {
+		
+		try {			
+			InetAddress iNet = InetAddress.getLocalHost();
+			System.out.println(iNet);
+			
+			System.out.println("내 PC정보 : " + iNet.getHostAddress());
+			System.out.println("내 IP 주소 : " + iNet.getAddress().toString());
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.kh.practice.set.model.compare;
+
+import java.util.Comparator;
+
+public class SortedLottery implements Comparator<SortedLottery>{
+	@Override
+	public int compare(SortedLottery o1, SortedLottery o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
