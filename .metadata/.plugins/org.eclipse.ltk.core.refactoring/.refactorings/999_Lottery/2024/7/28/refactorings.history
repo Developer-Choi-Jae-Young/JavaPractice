@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;com.kh.practice.controller&apos; to &apos;com.kh.practice.set.controller&apos;&#x0D;&#x0A;- Original project: &apos;999_Lottery&apos;&#x0D;&#x0A;- Original element: &apos;999_Lottery/src/com.kh.practice.controller&apos;&#x0D;&#x0A;- Renamed element: &apos;999_Lottery/src/com.kh.practice.set.controller&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.kh.practice.controller&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.kh.practice.controller" name="com.kh.practice.set.controller" qualified="false" references="true" stamp="1720422408199" textual="false" version="1.0"/>
-</session>

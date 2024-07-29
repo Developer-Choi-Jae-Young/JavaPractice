@@ -1,7 +1,0 @@
-package com.kh.phone.control;
-
-import com.kh.phone.model.vo.PhoneBook;
-
-public class PhoneBookControl {
-	private PhoneBook[] pb = new PhoneBook[100];
-}

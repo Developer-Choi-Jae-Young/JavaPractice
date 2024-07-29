@@ -1,7 +1,0 @@
-package com.kh.practice.list.library.view;
-
-import java.util.Scanner;
-
-public class BookMenu {
-	private Scanner sc = new Scanner(System.in);
-}

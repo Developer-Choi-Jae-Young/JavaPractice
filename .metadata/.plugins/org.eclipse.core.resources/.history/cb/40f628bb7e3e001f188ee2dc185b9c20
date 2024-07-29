@@ -1,7 +1,0 @@
-package com.kh.practice;
-
-public class UDPServer {
-	public static void main(String[] args) {
-		
-	}
-}

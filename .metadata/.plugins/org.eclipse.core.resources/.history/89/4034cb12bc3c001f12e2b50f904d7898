@@ -1,7 +1,0 @@
-package com.kh.practice.list.library.controller;
-
-import java.util.Comparator;
-
-public class CompareImpl implements Comparator<Book> {
-
-}

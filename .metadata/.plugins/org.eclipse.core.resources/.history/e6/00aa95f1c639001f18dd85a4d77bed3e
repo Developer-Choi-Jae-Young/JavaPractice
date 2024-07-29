@@ -1,9 +1,0 @@
-package com.kh.practice;
-
-public class GenericExtednsRun {
-
-	public static void main(String[] args) {
-
-	}
-
-}
